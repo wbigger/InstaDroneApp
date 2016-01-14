@@ -29,5 +29,7 @@ public class Drone {
         return mCamera;
     }
     //public picture shotaPicture
+    
+    //comment
            
 }
