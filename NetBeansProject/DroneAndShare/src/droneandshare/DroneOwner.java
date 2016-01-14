@@ -15,11 +15,11 @@ public class DroneOwner {
     private Camera camera;
     private AppControl app;
     
-    AppControl app= new AppControl();
     
-    public DroneOwner(String nickName, Camera camera){
+    public DroneOwner(String nickName, Camera camera, AppControl app){
         this.nickName= nickName;
         this.camera= camera;
+        this.app= app;
         System.out.println("Welcome"+ nickName+ "!!");
         System.out.println("Installed camera: "+ camera);
     }
@@ -34,7 +34,10 @@ public class DroneOwner {
     
     public void setCamera(Camera modello){
         camera= modello;
-        System.out.println("New camera instaled:"+ modello);
+    }
+    
+    public void installMyCamera(){
+        System.out.println("My camera installed.");
     }
     
 }
