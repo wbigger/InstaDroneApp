@@ -9,13 +9,23 @@ package droneandshare.mediapackage;
  *
  * @author Claudio Capobianco
  */
-public class Media {
+public abstract class Media {
 
     private String mFname;
     private int mSizeH;
     private int mSizeV;
     private String mGpsTag;
 
+    public int getmSizeH() {
+        return mSizeH;
+    }
+
+    public int getmSizeV() {
+        return mSizeV;
+    }
+
+    
+    
     private void generateRandomProperties() {
         mSizeH = 100 + (int) (Math.random() * 2000);
         mSizeV = 50 + (int) (Math.random() * 1200);
@@ -76,10 +86,6 @@ public class Media {
     /**
      * Show the property of the media
      */
-    public void showProperty() {
-        System.out.println("Media properties: "
-                + "size: " + mSizeH + "x" + mSizeV + "; "
-                + "gpsTag: " + mGpsTag + ".");
-    }
+    abstract void showProperty();
 
 }

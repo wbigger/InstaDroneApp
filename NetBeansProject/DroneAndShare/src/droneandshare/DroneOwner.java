@@ -5,6 +5,8 @@
  */
 package droneandshare;
 
+import droneandshare.camerapackage.Camera;
+
 /**
  * Class DroneOwner represents the drone owner. Get nickname of DroneOwner and
  * the Camera used; ask to AppControl to shot a picture and to Drone to install

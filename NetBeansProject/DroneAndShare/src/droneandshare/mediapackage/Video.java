@@ -26,7 +26,6 @@ public class Video extends Media {
 
     @Override
     public void showProperty() {
-        super.showProperty();
         System.out.println("Lenght video: " + mLenghtInMinute + "min");
         System.out.println("Frame per second: " + mFramePerSecond + "sec");
     }

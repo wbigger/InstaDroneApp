@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package droneandshare;
+package droneandshare.camerapackage;
 
 import droneandshare.mediapackage.Picture;
 
@@ -11,7 +11,7 @@ import droneandshare.mediapackage.Picture;
  * This Class models a new camera and define picture's name
  * @author Valerio e Santo
  */
-public class Camera {
+public class Camera implements CameraInterface {
    private int count = 0;
    private String modelName; 
    
@@ -28,6 +28,7 @@ public class Camera {
      * shoot a picture and give it a name
      * @return return a Picture Objects
      */
+   @Override
     public Picture shotAPicture() {
         
         Picture p = new Picture(Integer.toString(count)+".jpg");

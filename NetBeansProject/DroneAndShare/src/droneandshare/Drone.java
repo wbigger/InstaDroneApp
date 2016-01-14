@@ -5,6 +5,7 @@
  */
 package droneandshare;
 
+import droneandshare.camerapackage.Camera;
 import droneandshare.mediapackage.Picture;
 
 /**
