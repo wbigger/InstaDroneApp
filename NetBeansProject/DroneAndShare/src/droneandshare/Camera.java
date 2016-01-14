@@ -6,34 +6,41 @@
 package droneandshare;
 
 /**
- *
- * @author corso
+ * This Class models a new camera and define picture's name
+ * @author Valerio e Santo
  */
 public class Camera {
-   private int count = 0;//test 
-  // private String mPictureName;
+   private int count = 0;
    private String modelName; 
    
+    /**
+     * Camera constructor that specifies the creation of a new camera and its name
+     * @param modelName camera's modelName
+     */
     public Camera(String modelName){
         this.modelName = modelName;
         System.out.println("New camera created!! Model name: "+ modelName);
     }
+
+    /**
+     * shoot a picture and give it a name
+     * @return return a Picture Objects
+     */
     public Picture shotAPicture() {
         
-      //System.out.println("Ho scattato una foto: "+mPictureName);
-      
-      Picture p = new Picture(Integer.toString(count)+".jpg");
-      System.out.println("Camera "+ modelName + "has shot photo "+p.getFname());
-      //test
-      count++;
-      return p;
+        Picture p = new Picture(Integer.toString(count)+".jpg");
+        System.out.println("Camera "+ modelName + "has shot photo "+p.getFname());
+        count++;
+        return p;
     }
+    
     public String getModelName(){
     
         return modelName;
     }
+    
    @Override
-    public String toString(){
-      return "Model name: "+ modelName;
+        public String toString(){
+        return "Model name: "+ modelName;
     }
 }
