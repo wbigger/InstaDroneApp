@@ -16,22 +16,23 @@ public class DroneAndShare {
      */
     public static void main(String[] args) {
         System.out.println("Hi, I am your Drone application!");
-        
+
         System.out.println("");
-        
+
         Media media = new Media("sky.jpg");
         media.showProperty();
-        
+
         System.out.println("");
-        
+
         Picture picture = new Picture("yellow.jpg");
         picture.showProperty();
-        picture.crop(10,20,100,500);
-        
+        picture.crop(10, 20, 100, 500);
+
         Media myMedia = new Picture("myPicture.jpg");
         myMedia.showProperty();
-        myMedia.crop(10,20,100,500);
-        
+        // Doesn't work!!!
+        //myMedia.crop(10,20,100,500);
+
     }
-    
+
 }
