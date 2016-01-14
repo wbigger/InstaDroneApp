@@ -19,7 +19,7 @@ public class Drone {
               
     }
     
-    private void installNewCamera (Camera camera){
+    public void installNewCamera (Camera camera){
        mCamera=camera;
         System.out.println("La camera e' stata installata!! ");
         
