@@ -14,12 +14,14 @@ public class DroneOwner {
     private String nickName;
     private Camera camera;
     private AppControl app;
+    private Drone drone;
     
     
-    public DroneOwner(String nickName, Camera camera, AppControl app){
+    public DroneOwner(String nickName, Camera camera, AppControl app, Drone drone){
         this.nickName= nickName;
         this.camera= camera;
         this.app= app;
+        this.drone= drone;
         System.out.println("Welcome"+ nickName+ "!!");
         System.out.println("Installed camera: "+ camera);
     }
@@ -37,7 +39,12 @@ public class DroneOwner {
     }
     
     public void installMyCamera(){
+        drone.installNewCamera(camera);
         System.out.println("My camera installed.");
+    }
+    
+    public void askForPicture(){
+        drone.shotAPicture();
     }
     
 }
