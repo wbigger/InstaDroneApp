@@ -10,10 +10,26 @@ package droneandshare;
  * @author corso
  */
 public class Camera {
+   private int count = 0;//test 
+  // private String mPictureName;
+   private String modelName; 
    
-//    private String mPictureName;
-//    
-//     public String shotAPicture {
-//        mPictureName;
-//    }
+    public Camera(String modelName){
+        this.modelName = modelName;
+        System.out.println("New camera created!! Model name: "+ modelName);
+    }
+    public Picture shotAPicture() {
+        
+      //System.out.println("Ho scattato una foto: "+mPictureName);
+      
+      Picture p = new Picture(Integer.toString(count)+".jpg");
+      
+      //test
+      count++;
+      return p;
+    }
+    public String getModelName(){
+    
+        return modelName;
+    }
 }
