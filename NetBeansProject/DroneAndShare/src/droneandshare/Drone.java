@@ -18,6 +18,10 @@ public class Drone {
         mCamera=camera;
               
     }
+        public Drone () {
+            this.mCamera=new Camera("inserire una nuova camera");
+        }
+        
     
     public void installNewCamera (Camera camera){
        mCamera=camera;
