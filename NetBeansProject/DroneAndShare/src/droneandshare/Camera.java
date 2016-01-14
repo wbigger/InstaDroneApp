@@ -23,7 +23,7 @@ public class Camera {
       //System.out.println("Ho scattato una foto: "+mPictureName);
       
       Picture p = new Picture(Integer.toString(count)+".jpg");
-      
+      System.out.println("Camera "+ modelName + "has shot photo "+p.getFname());
       //test
       count++;
       return p;
@@ -31,5 +31,9 @@ public class Camera {
     public String getModelName(){
     
         return modelName;
+    }
+   @Override
+    public String toString(){
+      return "Model name: "+ modelName;
     }
 }

@@ -44,7 +44,11 @@ public class DroneOwner {
     }
     
     public void askForPicture(){
-        drone.shotAPicture();
+        app.shotAPicture();
+    }
+
+    void askForShowPicture() {
+        app.showPicture();
     }
     
 }
