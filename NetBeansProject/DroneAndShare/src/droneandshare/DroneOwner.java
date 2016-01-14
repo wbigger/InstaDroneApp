@@ -22,8 +22,8 @@ public class DroneOwner {
         this.camera= camera;
         this.app= app;
         this.drone= drone;
-        System.out.println("Welcome"+ nickName+ "!!");
-        System.out.println("Installed camera: "+ camera);
+        System.out.println("Welcome "+ nickName+ "!!");
+        System.out.println(nickName+ "has installed camera: "+ camera);
     }
     
     public String getNickName(){
@@ -40,7 +40,7 @@ public class DroneOwner {
     
     public void installMyCamera(){
         drone.installNewCamera(camera);
-        System.out.println("My camera installed.");
+        System.out.println(nickName+ "your camera has been installed.");
     }
     
     public void askForPicture(){
