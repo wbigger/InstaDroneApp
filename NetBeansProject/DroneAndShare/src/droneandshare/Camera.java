@@ -32,4 +32,8 @@ public class Camera {
     
         return modelName;
     }
+   @Override
+    public String toString(){
+      return "Model name: "+ modelName;
+    }
 }
