@@ -33,6 +33,9 @@ public class DroneAndShare {
         // Doesn't work!!!
         //myMedia.crop(10,20,100,500);
 
+        Camera camera = new Camera("canonEos500d");
+        Drone drone= new Drone(camera);    
+       
     }
 
 }

@@ -28,8 +28,9 @@ public class Drone {
     public Camera getmCamera() {
         return mCamera;
     }
-    /*public Picture shotAPicture(){
-       
-    }*/
+
+    public Picture shotAPicture(){
+       return mCamera.shotAPicture();
+    }
            
 }
