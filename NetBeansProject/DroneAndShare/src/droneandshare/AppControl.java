@@ -23,10 +23,10 @@ public class AppControl {
         return this.mIsPro;
     }
     
-//    public Picture ShotAPicture (){
-//        
-//        System.out.println("I'm AppControl and I'm shooting a picture!");
-//        return mDrone.shotAPicture(); 
-//    }
+    public Picture ShotAPicture (){
+        
+        System.out.println("I'm AppControl and I'm shooting a picture!");
+        return mDrone.shotAPicture(); 
+    }
     
 }
