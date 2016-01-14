@@ -24,15 +24,24 @@ public class Media {
         mGpsTag = lat+","+lon;
     }
     
-    public Media(String fname) {
-        // Load the media wih the specified filename...
+    private void initMedia(String fname) {
         System.out.println("Inside Media constructor");
-        System.out.println("Loading: "+fname);
         mFname = fname;
-        
         // Let's say that this media has the following properties
         // In a real class, these values are read from the file itself!!
         generateRandomProperties();
+        System.out.println("Loading: "+fname);
+    }
+    
+    public Media(String fname) {
+        // Load the media wih the specified filename...
+        initMedia(fname);
+
+    }
+    
+    public Media() {
+        String fname = (int)(Math.random()*100)+".media";
+        initMedia(fname);
     }
     
     public String getFname() {

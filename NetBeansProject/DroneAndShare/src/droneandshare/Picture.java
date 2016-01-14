@@ -19,6 +19,13 @@ public class Picture extends Media {
         mExposure = (float) Math.random();
     }
     
+    public Picture() {
+        super();
+        String fname = (int)(Math.random()*100)+".jpg";
+        System.out.println("Inside Picture constructor");
+        mExposure = (float) Math.random();
+    }
+    
     @Override
         public void showProperty() {
             super.showProperty();

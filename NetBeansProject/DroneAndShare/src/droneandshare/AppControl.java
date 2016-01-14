@@ -13,6 +13,7 @@ public class AppControl {
     
     private final boolean mIsPro;
     private Drone mDrone;
+    private Picture mPicture;
     
     public AppControl(Drone drone) {
         this.mDrone = drone;
@@ -23,10 +24,12 @@ public class AppControl {
         return this.mIsPro;
     }
     
-    public Picture ShotAPicture (){
-        
+    public void shotAPicture (){
         System.out.println("I'm AppControl and I'm shooting a picture!");
-        return mDrone.shotAPicture(); 
+        mPicture = mDrone.shotAPicture(); 
     }
     
+    public void showPicture() {
+        System.out.println("Showing picture "+mPicture);
+    }
 }

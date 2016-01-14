@@ -19,22 +19,32 @@ public class DroneAndShare {
 
         System.out.println("");
 
-        Media media = new Media("sky.jpg");
-        media.showProperty();
-
+        
+        Camera myCamera = new Camera("Nikon N1");
+        Camera mySecondCamera = new Camera("Canon EOS 500d");
         System.out.println("");
-
-        Picture picture = new Picture("yellow.jpg");
-        picture.showProperty();
-        picture.crop(10, 20, 100, 500);
-
-        Media myMedia = new Picture("myPicture.jpg");
-        myMedia.showProperty();
-        // Doesn't work!!!
-        //myMedia.crop(10,20,100,500);
-
-        Camera camera = new Camera("canonEos500d");
-        Drone drone= new Drone(camera);    
+        
+        Drone myDrone = new Drone(myCamera);
+        AppControl myApp = new AppControl(myDrone);
+        System.out.println("");
+        
+        DroneOwner claudio = new DroneOwner("Claudio", myCamera, myApp, myDrone);
+        System.out.println("");
+        
+        claudio.setCamera(mySecondCamera);
+        claudio.installMyCamera();
+        
+        System.out.println("");
+        
+        claudio.askForPicture();
+        claudio.askForPicture();
+        claudio.askForPicture();
+        claudio.askForPicture();
+        claudio.askForPicture();
+        claudio.askForPicture();
+        
+        claudio.askForShowPicture();
+        
        
     }
 
