@@ -6,8 +6,8 @@
 package droneandshare;
 
 /**
- *
- * @author Claudio Capobianco
+ * Entry point of DroneAndShare application
+ * @author Adecco2016
  */
 public class DroneAndShare {
 
@@ -19,11 +19,12 @@ public class DroneAndShare {
 
         System.out.println("");
 
-        
+        // Create cameras without loops
         Camera myCamera = new Camera("Nikon N1");
         Camera mySecondCamera = new Camera("Canon EOS 500d");
         System.out.println("");
         
+        // Test Drones and AppControl
         Drone myDrone = new Drone(myCamera);
         AppControl myApp = new AppControl(myDrone);
         System.out.println("");
@@ -31,11 +32,13 @@ public class DroneAndShare {
         DroneOwner claudio = new DroneOwner("Claudio", myCamera, myApp, myDrone);
         System.out.println("");
         
+        // Install a new camera
         claudio.setCamera(mySecondCamera);
         claudio.installMyCamera();
         
         System.out.println("");
         
+        // Test picture shooting
         claudio.askForPicture();
         claudio.askForPicture();
         claudio.askForPicture();
