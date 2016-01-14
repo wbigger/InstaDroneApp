@@ -11,11 +11,12 @@ package droneandshare;
  */
 public class AppControl {
     
-    private boolean mIsPro = false;
+    private final boolean mIsPro;
     private Drone mDrone;
     
     public AppControl(Drone drone) {
         this.mDrone = drone;
+        mIsPro = false;
     }
     
     public boolean getIsPro() 
@@ -23,9 +24,10 @@ public class AppControl {
         return this.mIsPro;
     }
     
-    public void ShotAPicture (){
-        Picture picture = new Picture("pic.jpg");
-        System.out.println("I'm shooting a picture:" + picture.getFname());
+    public Picture ShotAPicture (){
+        
+        System.out.println("I'm AppControl and I'm shooting a picture!");
+        return mDrone.shotAPicture();
     }
     
 }
