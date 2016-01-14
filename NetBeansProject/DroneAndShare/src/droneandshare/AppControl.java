@@ -25,7 +25,7 @@ public class AppControl {
     
     public void ShotAPicture (){
         Picture picture = new Picture("pic.jpg");
-        System.out.println("I'm shooting a picture!");
+        System.out.println("I'm shooting a picture:" + picture.getFname());
     }
     
 }
