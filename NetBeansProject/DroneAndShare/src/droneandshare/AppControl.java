@@ -1,4 +1,5 @@
 package droneandshare;
+import droneandshare.mediapackage.Picture;
 
 /**
  * This Class defines all the app commands

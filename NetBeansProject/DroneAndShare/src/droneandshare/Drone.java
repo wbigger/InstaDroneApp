@@ -5,6 +5,8 @@
  */
 package droneandshare;
 
+import droneandshare.mediapackage.Picture;
+
 /**
  * Creation of a class named Drone
  * @author Vincenzo e Luca

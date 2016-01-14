@@ -5,6 +5,8 @@
  */
 package droneandshare;
 
+import droneandshare.mediapackage.Picture;
+
 /**
  * This Class models a new camera and define picture's name
  * @author Valerio e Santo
