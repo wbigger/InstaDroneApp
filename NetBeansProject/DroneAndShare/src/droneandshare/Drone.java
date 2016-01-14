@@ -16,8 +16,14 @@ public class Drone {
     
     public Drone (Camera camera) {
         mCamera=camera;
+        System.out.println("Loading new camera in progress! ");
               
     }
+        public Drone () {
+            this.mCamera=new Camera("insert in progress");
+             System.out.println(" no use camera! ");
+        }
+        
     
     public void installNewCamera (Camera camera){
        mCamera=camera;
