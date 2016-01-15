@@ -5,6 +5,9 @@
  */
 package droneandshare.mediapackage;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  * The Picture class represent a picture file that can be edited.
  *
@@ -18,9 +21,16 @@ public class Picture extends Media {
      * Load a video file with given filename
      *
      * @param fname The name of the picture to be loaded
+     * @throws java.lang.Exception
      */
-    public Picture(String fname) {
+    public Picture(String fname) throws Exception {
         super(fname);
+        // the name of the file has to be max 100 characters
+        int maxFNameLen = 5;
+        if (fname.length() > maxFNameLen) {
+            throw new Exception();
+        }
+
         System.out.println("Inside Picture constructor");
         mExposure = (float) Math.random();
     }

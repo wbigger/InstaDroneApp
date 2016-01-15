@@ -12,5 +12,5 @@ import droneandshare.mediapackage.Picture;
  * @author Claudio Capobianco
  */
 public interface CameraInterface {
-    public Picture shotAPicture();
+    public Picture shotAPicture() throws Exception ;
 }
