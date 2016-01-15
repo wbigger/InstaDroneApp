@@ -15,7 +15,7 @@ hs_err_pid*
 # Created by https://www.gitignore.io/api/netbeans
 
 ### NetBeans ###
-nbproject/private/
+/NetBeansProject/DroneAndShare/nbproject/private/
 build/
 nbbuild/
 dist/
